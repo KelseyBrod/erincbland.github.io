@@ -9,18 +9,23 @@ body {
 
 .grid-container {
     border: 10px dotted;
+    padding: 15px;
+    /* i suggest padding for breathing room */
     display: grid;
-    grid-template-columns: repeat(3, 50px);
+    grid-template-columns: repeat(3, 3fr);
+    /* use the fr (fractional) unit to make it responsive! */
     grid-template-rows: 100px 100px;
     gap: 15px;
 }
 
 .grid-item {
     padding: 25% 30px;
+    /* oh i see you did put padding on the items, but this isn't referencing a class in your index! I will put it there to show you... */
 }
 
 .container {
-    color: burlywood
+    color: burlywood;
+    /* you were missing a colon so it wasn't rendering the color! ... but now visibility is low */
     display: flex;
     flex-wrap: wrap
 }
@@ -33,3 +38,7 @@ img {
     width: 25%;
     float: right;
 }
+
+/* 
+adding a media query to make it mobile friendly would be nice!
+*/
